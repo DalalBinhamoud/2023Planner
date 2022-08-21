@@ -23,6 +23,21 @@
 		193BA8B9280932CE00B9D442 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193BA8B7280932CE00B9D442 /* CalendarCell.swift */; };
 		193BA8BB280933C000B9D442 /* MonthStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193BA8BA280933C000B9D442 /* MonthStruct.swift */; };
 		193BA8BC280933C000B9D442 /* MonthStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193BA8BA280933C000B9D442 /* MonthStruct.swift */; };
+		E45DD96D28B128C600C384F0 /* DailyPlanDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD96C28B128C600C384F0 /* DailyPlanDto.swift */; };
+		E45DD97128B26A6D00C384F0 /* DailyTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD97028B26A6D00C384F0 /* DailyTasks.swift */; };
+		E45DD97328B26B7D00C384F0 /* DailyExcercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD97228B26B7D00C384F0 /* DailyExcercises.swift */; };
+		E45DD97528B26BAB00C384F0 /* TodayFeelings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD97428B26BAB00C384F0 /* TodayFeelings.swift */; };
+		E45DD97828B295CE00C384F0 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD97728B295CE00C384F0 /* LandingView.swift */; };
+		E45DD97A28B295EB00C384F0 /* NewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD97928B295EB00C384F0 /* NewTask.swift */; };
+		E45DD97C28B295F200C384F0 /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD97B28B295F200C384F0 /* TaskDetailView.swift */; };
+		E45DD97F28B2962400C384F0 /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD97E28B2962400C384F0 /* LandingViewModel.swift */; };
+		E45DD98128B2965000C384F0 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD98028B2965000C384F0 /* TaskList.swift */; };
+		E45DD98328B2965800C384F0 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD98228B2965800C384F0 /* CategoryModel.swift */; };
+		E45DD98B28B2A3AF00C384F0 /* Planner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E45DD98928B2A3AF00C384F0 /* Planner.xcdatamodeld */; };
+		E45DD99028B2A5A100C384F0 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD98C28B2A5A100C384F0 /* Task+CoreDataClass.swift */; };
+		E45DD99128B2A5A100C384F0 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD98D28B2A5A100C384F0 /* Task+CoreDataProperties.swift */; };
+		E45DD99228B2A5A100C384F0 /* DayPlanner+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD98E28B2A5A100C384F0 /* DayPlanner+CoreDataClass.swift */; };
+		E45DD99328B2A5A100C384F0 /* DayPlanner+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD98F28B2A5A100C384F0 /* DayPlanner+CoreDataProperties.swift */; };
 		E45ED82F28AFC96400F30C3D /* DayPlannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45ED82E28AFC96400F30C3D /* DayPlannerView.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +53,21 @@
 		193BA8B42809267200B9D442 /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
 		193BA8B7280932CE00B9D442 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		193BA8BA280933C000B9D442 /* MonthStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStruct.swift; sourceTree = "<group>"; };
+		E45DD96C28B128C600C384F0 /* DailyPlanDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPlanDto.swift; sourceTree = "<group>"; };
+		E45DD97028B26A6D00C384F0 /* DailyTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTasks.swift; sourceTree = "<group>"; };
+		E45DD97228B26B7D00C384F0 /* DailyExcercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyExcercises.swift; sourceTree = "<group>"; };
+		E45DD97428B26BAB00C384F0 /* TodayFeelings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayFeelings.swift; sourceTree = "<group>"; };
+		E45DD97728B295CE00C384F0 /* LandingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		E45DD97928B295EB00C384F0 /* NewTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTask.swift; sourceTree = "<group>"; };
+		E45DD97B28B295F200C384F0 /* TaskDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
+		E45DD97E28B2962400C384F0 /* LandingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
+		E45DD98028B2965000C384F0 /* TaskList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		E45DD98228B2965800C384F0 /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		E45DD98A28B2A3AF00C384F0 /* Planner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Planner.xcdatamodel; sourceTree = "<group>"; };
+		E45DD98C28B2A5A100C384F0 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E45DD98D28B2A5A100C384F0 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E45DD98E28B2A5A100C384F0 /* DayPlanner+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DayPlanner+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E45DD98F28B2A5A100C384F0 /* DayPlanner+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DayPlanner+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E45ED82E28AFC96400F30C3D /* DayPlannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPlannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +92,10 @@
 		193BA88A2809174900B9D442 = {
 			isa = PBXGroup;
 			children = (
+				E45DD99428B2AC4700C384F0 /* CoreData */,
+				E45DD98928B2A3AF00C384F0 /* Planner.xcdatamodeld */,
+				E45DD97D28B2961300C384F0 /* ViewModel */,
+				E45DD96B28B128AD00C384F0 /* Models */,
 				E45ED82D28AFC93200F30C3D /* Views */,
 				193BA88F2809174900B9D442 /* Shared */,
 				193BA89E2809174A00B9D442 /* macOS */,
@@ -101,10 +135,69 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		E45DD96B28B128AD00C384F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E45DD98028B2965000C384F0 /* TaskList.swift */,
+				E45DD98228B2965800C384F0 /* CategoryModel.swift */,
+				E45DD96C28B128C600C384F0 /* DailyPlanDto.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E45DD96E28B26A3B00C384F0 /* DailyPlannerView */ = {
+			isa = PBXGroup;
+			children = (
+				E45DD96F28B26A4C00C384F0 /* Components */,
+				E45ED82E28AFC96400F30C3D /* DayPlannerView.swift */,
+			);
+			path = DailyPlannerView;
+			sourceTree = "<group>";
+		};
+		E45DD96F28B26A4C00C384F0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E45DD97628B295BB00C384F0 /* DailyTaskView */,
+				E45DD97228B26B7D00C384F0 /* DailyExcercises.swift */,
+				E45DD97428B26BAB00C384F0 /* TodayFeelings.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E45DD97628B295BB00C384F0 /* DailyTaskView */ = {
+			isa = PBXGroup;
+			children = (
+				E45DD97728B295CE00C384F0 /* LandingView.swift */,
+				E45DD97B28B295F200C384F0 /* TaskDetailView.swift */,
+				E45DD97928B295EB00C384F0 /* NewTask.swift */,
+				E45DD97028B26A6D00C384F0 /* DailyTasks.swift */,
+			);
+			path = DailyTaskView;
+			sourceTree = "<group>";
+		};
+		E45DD97D28B2961300C384F0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E45DD97E28B2962400C384F0 /* LandingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E45DD99428B2AC4700C384F0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E45DD98C28B2A5A100C384F0 /* Task+CoreDataClass.swift */,
+				E45DD98D28B2A5A100C384F0 /* Task+CoreDataProperties.swift */,
+				E45DD98E28B2A5A100C384F0 /* DayPlanner+CoreDataClass.swift */,
+				E45DD98F28B2A5A100C384F0 /* DayPlanner+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		E45ED82D28AFC93200F30C3D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E45ED82E28AFC96400F30C3D /* DayPlannerView.swift */,
+				E45DD96E28B26A3B00C384F0 /* DailyPlannerView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,7 +257,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 193BA88E2809174900B9D442 /* Build configuration list for PBXProject "CalendarSwiftUI" */;
+			buildConfigurationList = 193BA88E2809174900B9D442 /* Build configuration list for PBXProject "2023Planner" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -208,13 +301,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				E45ED82F28AFC96400F30C3D /* DayPlannerView.swift in Sources */,
+				E45DD97828B295CE00C384F0 /* LandingView.swift in Sources */,
 				193BA8B52809267200B9D442 /* CalendarHelper.swift in Sources */,
+				E45DD99128B2A5A100C384F0 /* Task+CoreDataProperties.swift in Sources */,
 				193BA8B8280932CE00B9D442 /* CalendarCell.swift in Sources */,
 				193BA8BB280933C000B9D442 /* MonthStruct.swift in Sources */,
+				E45DD99328B2A5A100C384F0 /* DayPlanner+CoreDataProperties.swift in Sources */,
+				E45DD97528B26BAB00C384F0 /* TodayFeelings.swift in Sources */,
+				E45DD96D28B128C600C384F0 /* DailyPlanDto.swift in Sources */,
+				E45DD98328B2965800C384F0 /* CategoryModel.swift in Sources */,
 				193BA8B22809258000B9D442 /* DateScrollerView.swift in Sources */,
 				193BA8A22809174A00B9D442 /* ContentView.swift in Sources */,
+				E45DD97A28B295EB00C384F0 /* NewTask.swift in Sources */,
+				E45DD97F28B2962400C384F0 /* LandingViewModel.swift in Sources */,
+				E45DD97328B26B7D00C384F0 /* DailyExcercises.swift in Sources */,
+				E45DD98B28B2A3AF00C384F0 /* Planner.xcdatamodeld in Sources */,
 				193BA8AF2809250D00B9D442 /* DateHolder.swift in Sources */,
+				E45DD99028B2A5A100C384F0 /* Task+CoreDataClass.swift in Sources */,
+				E45DD97128B26A6D00C384F0 /* DailyTasks.swift in Sources */,
 				193BA8A02809174A00B9D442 /* CalendarSwiftUIApp.swift in Sources */,
+				E45DD99228B2A5A100C384F0 /* DayPlanner+CoreDataClass.swift in Sources */,
+				E45DD98128B2965000C384F0 /* TaskList.swift in Sources */,
+				E45DD97C28B295F200C384F0 /* TaskDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,7 +574,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		193BA88E2809174900B9D442 /* Build configuration list for PBXProject "CalendarSwiftUI" */ = {
+		193BA88E2809174900B9D442 /* Build configuration list for PBXProject "2023Planner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				193BA8A62809174A00B9D442 /* Debug */,
@@ -494,6 +602,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E45DD98928B2A3AF00C384F0 /* Planner.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E45DD98A28B2A3AF00C384F0 /* Planner.xcdatamodel */,
+			);
+			currentVersion = E45DD98A28B2A3AF00C384F0 /* Planner.xcdatamodel */;
+			path = Planner.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 193BA88B2809174900B9D442 /* Project object */;
 }

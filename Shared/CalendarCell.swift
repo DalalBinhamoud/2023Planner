@@ -37,7 +37,7 @@ struct CalendarCell: View
 //            }
 
         }.fullScreenCover(isPresented: self.$toggleDayPlannerView, content: {
-            DayPlannerView(toggleDay: $toggleDayPlannerView)
+            DayPlannerView(toggleDay: $toggleDayPlannerView, currentDay: monthStruct().day())
         })
 
       
