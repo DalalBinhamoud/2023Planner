@@ -31,6 +31,7 @@
 		E45DD99228B2A5A100C384F0 /* DayPlanner+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD98E28B2A5A100C384F0 /* DayPlanner+CoreDataClass.swift */; };
 		E45DD99328B2A5A100C384F0 /* DayPlanner+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45DD98F28B2A5A100C384F0 /* DayPlanner+CoreDataProperties.swift */; };
 		E45ED82F28AFC96400F30C3D /* DayPlannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45ED82E28AFC96400F30C3D /* DayPlannerView.swift */; };
+		E4F719AA28B3AE16000AAC24 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F719A928B3AE16000AAC24 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		E45DD98E28B2A5A100C384F0 /* DayPlanner+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DayPlanner+CoreDataClass.swift"; sourceTree = "<group>"; };
 		E45DD98F28B2A5A100C384F0 /* DayPlanner+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DayPlanner+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E45ED82E28AFC96400F30C3D /* DayPlannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPlannerView.swift; sourceTree = "<group>"; };
+		E4F719A928B3AE16000AAC24 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				E45DD98D28B2A5A100C384F0 /* Task+CoreDataProperties.swift */,
 				E45DD98E28B2A5A100C384F0 /* DayPlanner+CoreDataClass.swift */,
 				E45DD98F28B2A5A100C384F0 /* DayPlanner+CoreDataProperties.swift */,
+				E4F719A928B3AE16000AAC24 /* CoreDataManager.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				193BA8AF2809250D00B9D442 /* DateHolder.swift in Sources */,
 				E45DD99028B2A5A100C384F0 /* Task+CoreDataClass.swift in Sources */,
 				193BA8A02809174A00B9D442 /* CalendarSwiftUIApp.swift in Sources */,
+				E4F719AA28B3AE16000AAC24 /* CoreDataManager.swift in Sources */,
 				E45DD99228B2A5A100C384F0 /* DayPlanner+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
