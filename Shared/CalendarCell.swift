@@ -15,6 +15,7 @@ struct CalendarCell: View
     let daysInMonth : Int
     let daysInPrevMonth : Int
     @State private var toggleDayPlannerView: Bool = false
+    @Environment(\.managedObjectContext) var moc
 
 
 
@@ -37,7 +38,7 @@ struct CalendarCell: View
 //            }
 
         }.fullScreenCover(isPresented: self.$toggleDayPlannerView, content: {
-            DayPlannerView(toggleDay: $toggleDayPlannerView)
+            DayPlannerView(toggleDay: $toggleDayPlannerView, currentDay: monthStruct().day()).environment(\.managedObjectContext, self.moc)
         })
 
       
