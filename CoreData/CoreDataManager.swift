@@ -20,6 +20,24 @@ struct CoreDataManager {
         }
     }
 
+//    func getSpecific(passedDate: String){
+//
+//        let managedObject = DayPlanner(context: CoreDataManager.shared.viewContext)
+//        let managedObjectID = managedObject.objectID
+//
+//        let fetchedId = managedObject.objectID.URIRepresentation()
+//
+//        let objectID = viewContext.persistentStoreCoordinator!.managedObjectIDForURIRepresentation(fetchedId)
+//
+//
+//
+//
+//        // Get the object by ID from the NSManagedObjectContext
+//        let object = try viewContext.existingObject(
+//            with: objectID
+//        )
+//    }
+
     //Save object to coredata
     func save(){
         do{

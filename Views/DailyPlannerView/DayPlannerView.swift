@@ -30,11 +30,17 @@ struct DayPlannerView: View {
         VStack{
             List {
                  ForEach(CoreDataManager.shared.getAllDays(), id: \.self) { day in
-                     Section(day.wrappedDate) {
-                         ForEach(day.tasksArray, id: \.self) { task in
-                             Text(task.wrappedName)
+                     if(day.wrappedDate == getCoreDataKey(dateHolder: dateHolder.date, currentDay: currentDay)){
+                         Section(day.wrappedDate) {
+                             ForEach(day.tasksArray, id: \.self) { task in
+
+                                     Text(task.wrappedName)
+
+
+                             }
                          }
                      }
+
                  }
             }
 
@@ -74,6 +80,10 @@ struct DayPlannerView: View {
         }.frame(maxWidth: .infinity).background(.brown)
 
 }
+
+//    func canDisplay (dd:String)-> Bool{
+//        return dd == getCoreDataKey(dateHolder: dateHolder.date, currentDay: currentDay)
+//    }
 
 // we will store month-day as a key in core data
 func getCoreDataKey (dateHolder: Date, currentDay: String) -> String
