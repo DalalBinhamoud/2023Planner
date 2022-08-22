@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DayPlanner2" representedClassName="DayPlanner2" syncable="YES">
+        <attribute name="dateId" optional="YES" attributeType="String"/>
+        <relationship name="task2" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Task2" inverseName="belongDate" inverseEntity="Task2"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="dateId"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Task2" representedClassName="Task2" syncable="YES">
+        <attribute name="taskName" optional="YES" attributeType="String"/>
+        <relationship name="belongDate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DayPlanner2" inverseName="task2" inverseEntity="DayPlanner2"/>
+    </entity>
+    <elements>
+        <element name="DayPlanner2" positionX="-36" positionY="9" width="128" height="59"/>
+        <element name="Task2" positionX="0" positionY="45" width="128" height="59"/>
+    </elements>
+</model>

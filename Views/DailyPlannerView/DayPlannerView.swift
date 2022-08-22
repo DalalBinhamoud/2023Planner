@@ -11,7 +11,8 @@ struct DayPlannerView: View {
     @Binding var toggleDay: Bool
     var currentDay: String = "1"
 
-    @Environment(\.managedObjectContext) var moc
+   // @Environment(\.managedObjectContext) var moc
+    @Environment(\.presentationMode) var presentationMode
     @FetchRequest(sortDescriptors: []) var days: FetchedResults<DayPlanner>
 
     @EnvironmentObject var dateHolder: DateHolder
@@ -25,57 +26,53 @@ struct DayPlannerView: View {
 
 
 
-    var body: some View {  NavigationView {
+    var body: some View {
         VStack{
-//            List {
-//                 ForEach(days, id: \.self) { country in
-//                     Section(country.date) {
-//                         ForEach(country.has, id: \.self) { candy in
-//                             Text(candy.taskName)
-//                         }
-//                     }
-//                 }
+            List {
+                 ForEach(CoreDataManager.shared.getAllDays(), id: \.self) { day in
+                     Section(day.wrappedDate) {
+                         ForEach(day.tasksArray, id: \.self) { task in
+                             Text(task.wrappedName)
+                         }
+                     }
+                 }
+            }
 
-            HStack{
-                DailyTasks().background(.red).frame(maxWidth:.infinity)
-                // Spacer()
-                DailyExcercises().background(.green).frame(maxWidth:.infinity)
-                //                Spacer()
-                TodayFeelings().background(.blue)
-            }.frame(maxWidth:.infinity)
-            Spacer()
-            HStack{
+            Button("add"){
+                print("days=\(CoreDataManager.shared.getAllDays())")
+             //   let task = Task(context: moc)
 
-              //  Spacer()
-                Button(action:{}){
-                    VStack {
-                        Text("Save")
-
-                    }.frame(maxWidth:.infinity)
-
-                }.background(.pink).frame(maxWidth:.infinity)
-
-              //  Spacer()
-                Button(action:{
-                    toggleDay.toggle()
-                }){
-                    VStack {
-                        Text("Cancel")
-
-                    }.frame(maxWidth:.infinity)
-                    // Text("hi \(getCoreDataKey(dateHolder: dateHolder.date, currentDay: currentDay))")
-                }.background(.yellow).frame(maxWidth:.infinity)
-               // Spacer()
-            }.frame(maxWidth:.infinity)
+                let task = Task(context: CoreDataManager.shared.viewContext)
 
 
-        }.frame(maxWidth: .infinity).background(.brown).onAppear(
-//            selectedDayData =  UserDefaults.standard.get(forKey: getCoreDataKey(dateHolder: dateHolder.date, currentDay: currentDay))
-        )
+                task.taskName = "22222222"
+               // task.taskCompleted = false
+                let dd =   DayPlanner(context: CoreDataManager.shared.viewContext)
+                task.belong = dd
 
 
-    }
-    }
+                task.belong?.date = getCoreDataKey(dateHolder: dateHolder.date, currentDay: currentDay)
+
+
+                let task2 = Task(context: CoreDataManager.shared.viewContext)
+
+
+                task2.taskName = "22222222"
+               // task.taskCompleted = false
+
+                task2.belong = dd
+                task2.belong?.date = getCoreDataKey(dateHolder: dateHolder.date, currentDay: currentDay)
+
+
+
+
+                 CoreDataManager.shared.save()
+                self.presentationMode.wrappedValue.dismiss()
+            }
+
+
+        }.frame(maxWidth: .infinity).background(.brown)
+
 }
 
 // we will store month-day as a key in core data
@@ -86,7 +83,7 @@ func getCoreDataKey (dateHolder: Date, currentDay: String) -> String
 }
 
 
-
+}
 
 
 
